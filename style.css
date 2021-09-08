@@ -1,23 +1,96 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap');
+*/
+
+/*navi*/
+
 body{
     margin: 0;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    
     background-color: #f2f2f2;
 }
-#root{
-    display: flex;
-    /*justify-content: center;*/
-    flex-direction: column;
-    align-items: center;
 
+#root{
     max-width: 1200px;
-    min-height: 100vh;
     margin: 0 auto;
 
     background-color: rgb(255, 255, 255);
 }
-:root .element div{
-    display: inline;
+
+section{
+    min-height: 100vh;
+    border-bottom: solid 1px #999999;
 }
-:root.container .element strong{
-    display: block;
+
+h1{
+    font-weight: 100;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    z-index: 999;
+
+    background-color: grey;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    padding-left: 0; /*talán nem kell?! így teljesen középen van, de kis méretben kicsúszik a képből! hümm? wrap?*/
+}
+
+nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
 
 }
+
+/*main_content*/    
+
+
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 400px;
+
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: black;
+    border-radius: 200px;
+}
+
+#about {
+    position: relative;
+}
+
+#about button.more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
