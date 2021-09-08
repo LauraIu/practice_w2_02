@@ -2,6 +2,22 @@ body{
     margin: 0;
     background-color: #f2f2f2;
 }
-#root {
-    background-color: rgb (255, 255, 255);
+#root{
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    background-color: rgb(255, 255, 255);
+}
+:root .element div{
+    display: inline;
+}
+:root.container .element strong{
+    display: block;
+
 }
